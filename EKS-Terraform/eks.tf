@@ -230,7 +230,7 @@ resource "aws_iam_role_policy_attachment" "ecr" {
 
 resource "aws_eks_cluster" "eks" {
 
-  name     = "naresh"
+  name     = "shoaib-cluster"
   role_arn = aws_iam_role.cluster_role.arn
   version  = var.cluster_version
 
